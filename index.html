@@ -1,0 +1,473 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<title>Urban - Perplan</title>
+
+	<style>	
+		header{
+			background: url('images/banner-mobile.jpg') bottom;
+			background-size: cover;
+			min-height: 480px;
+			float: left;
+			width: 100%;
+		}
+		header .img-logo {
+			margin-top: 4px;
+			max-height: 70px;
+		}
+		.contente-title {
+			background:#2e3539;
+			color: white;
+		}
+		.contente-title h1 {
+			font:400 23px 'Titillium Web', sans-serif;
+			text-transform: uppercase;
+		}
+		.contente-title h2 {
+			font:300 28px 'Titillium Web', sans-serif;
+		}
+		.desc-apartment {
+			background:#efefef;
+			margin:220px 0 0 0;
+		}
+		.desc-apartment li {
+			list-style: none;
+		}
+		.desc-apartment li img {
+			width: 35px;
+			float: left;
+			margin: 19px 5px;
+		}
+		.desc-apartment li span {
+			color: #868686;
+			font-size: 13px;
+			margin: 20px 0;
+			display: inline-block;
+		}
+
+		/*responsive*/
+		@media (min-width: 800px) {
+			header{
+				min-height: 450px;
+				background: url(images/banner-desk.jpg) center bottom no-repeat;
+			}
+
+			.desc-apartment {
+				margin: 0 0 0 0;
+			}
+
+			header .img-logo {
+				margin-top: 10px;
+				padding: 0;
+				max-height: 80px;
+			}
+
+			header .img-logo.logo-2 {
+				margin: 30px 0;
+			}
+
+			.desc-apartment li span {
+				margin: 17px 10px;
+				font-size: 20px;
+			}
+
+			.desc-apartment li img {
+				width: 50px;
+			}
+
+			.contente-title {
+				height: 370px;
+			}
+
+			.contente-title h1,
+			.contente-title h2{
+				padding: 10px 20px 0px;
+				line-height: 1.3 !important;
+			}
+
+			.contente-title h1 {
+				margin-top: 60px;
+			}			
+		</style>
+		<!-- end style header -->
+	</head>
+
+	<body>
+		<header class="">
+			<div class="container">
+				<img src="images/logo-urban.svg" alt="logo-perplan" class="col-md-2 col-md-offset-0 hidden-xs hidden-sm img-logo">
+				<img src="images/logo-perplan.png" alt="logo-perplan" class="col-md-2 col-md-offset-0 hidden-xs hidden-sm img-logo logo-2">
+				<div class="contente-title col-xs-8 col-sm-6 col-md-3 col-xs-offset-2 col-sm-offset-3 col-md-offset-2">
+					<h1>
+						Os benefícios de morar na cidade
+					</h1>
+					<h2>
+						Com o lazer completo de um clube.
+					</h2>
+				</div>
+				<img src="images/logo-urban.svg" alt="logo-perplan" class="hidden-md hidden-lg col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3 img-logo">
+				<img src="images/logo-perplan.png" alt="logo-perplan" class="hidden-md hidden-lg col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3 img-logo">
+			</div>	
+			<ul class="desc-apartment col-sm-12 col-xs-12 col-md-12 no-padding">
+				<div class="container">
+					<li class="col-md-6 col-sm-6 col-xs-6 no-padding">
+						<div class="center">
+							<img src="images/icon01.svg" alt="">
+							<span>
+								3 suítes ou <br>
+								4 dormitórios
+							</span>	
+						</div>								
+					</li>
+					<li class="col-md-6 col-sm-6 col-xs-6 no-padding">
+						<div class="center">
+							<img src="images/icon02.svg" alt="">
+							<span>
+								3 suítes ou <br>
+								4 dormitórios
+							</span>	
+						</div>							
+					</li>
+				</div>
+			</ul>	
+		</header>
+		<!-- end header -->
+
+		<div class="content-sliders col-md-12 col-sm-12 col-xs-12">
+			<h3>Ambientes para viver bem</h3>
+			<div id="first-carousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/img-slider.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Living*" data-ordem="1 / 2">
+					</div>
+					<div class="item">
+						<img src="images/img-slider-01.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Sacada*" data-ordem="2 / 2">
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#first-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#first-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+				<img src="images/img-expand-img.png" alt="expand-image" class="expand-image">
+			</div>
+			<p class="qtd-fotos">1 / 2</p>
+			<h4>Living*</h4>
+
+			<div class="divider"></div>
+
+			<h3>Lazer para as crianças</h3>
+			<div id="second-carousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/img-slider2-00.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Salão de festa Infantil*" data-ordem="1 / 3">
+					</div>
+					<div class="item">
+						<img src="images/img-slider2-01.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Playground*" data-ordem="2 / 3">
+					</div>
+					<div class="item">
+						<img src="images/img-slider2-02.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Campo de Futebol*" data-ordem="3 / 3">
+					</div>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#second-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#second-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+				<img src="images/img-expand-img.png" alt="expand-image" class="expand-image">
+			</div>
+			<p class="qtd-fotos">1 / 3</p>
+			<h4>Salão de festa Infantil*</h4>
+
+			<div class="divider"></div>
+
+			<h3>Espaços para você relaxar</h3>
+			<div id="third-carousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/img-slider3-04.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="SPA*" data-ordem="1 / 6">
+					</div>
+					<div class="item">
+						<img src="images/img-slider3-01.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Piscina*" data-ordem="2 / 6">
+					</div>
+					<div class="item">
+						<img src="images/img-slider3-02.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Home Theater*" data-ordem="3 / 6">
+					</div>
+					<div class="item">
+						<img src="images/img-slider3-03.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Salão de Jogos*" data-ordem="4 / 6">
+					</div>
+					<!-- <div class="item">
+						<img src="images/img-slider3-04.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Slider 3 Title 2*" data-ordem="5 / 7">
+					</div> -->
+					<div class="item">
+						<img src="images/img-slider3-05.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Salão de festas*" data-ordem="5 / 6">
+					</div>
+					<div class="item">
+						<img src="images/img-slider3-06.jpg" alt="img-slider" class="img-slider" data-toggle="modal" data-target="#modal-fotos" data-title="Fitness*" data-ordem="6 / 6">
+					</div>
+					<img src="images/img-expand-img.png" alt="expand-image" class="expand-image">
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#third-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#third-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<p class="qtd-fotos">1 / 6</p>
+			<h4>SPA*</h4>
+		</div>
+		<!-- end.content-sliders -->	
+
+		<div class="content-plantas col-md-12 col-sm-12 col-xs-12">
+			<div class="container">
+				<h3>Opções de Planta</h3>
+				<div class="item-plantas col-md-6">
+					<div style="position: relative;">
+						<img src="images/img-planta01.jpg" alt="" class="img-slider" data-toggle="modal" data-target="#modal-fotos">
+						<img src="images/img-expand-img.png" alt="expand-image" class="expand-image">
+					</div>					
+					<p class="text-center no-margin">Planta 1</p>
+				</div>
+				<div class="item-plantas col-md-6">
+					<div style="position: relative;">
+						<img src="images/img-planta02.jpg" alt="" class="img-slider" data-toggle="modal" data-target="#modal-fotos">
+						<img src="images/img-expand-img.png" alt="expand-image" class="expand-image">
+					</div>		
+					<p class="text-center no-margin">Planta 2</p>
+				</div>
+			</div>		
+			<div class="divider-black"></div>
+		</div>
+		<!-- end .content-plantas -->
+
+		<div class="content-benefits col-md-12 col-sm-12 col-xs-12">
+			<div class="container">
+				<h3>Não espere mais</h3>
+
+				<div class="item">
+					<img src="images/icon05.svg" alt="icon-key" class="icon01">
+					<h4>Pronto para morar</h4>
+					<p>
+						A obra já está 100% finalizada e entregue. Você se muda quando quiser.
+					</p>
+				</div>
+
+				<div class="item">
+					<img src="images/icon06.svg" alt="icon-key" class="icon02">
+					<h4>Segurança e privacidade</h4>
+					<p>
+						Você pode contar com guarita e hall de espera com vigilância 24 horas.
+					</p>
+				</div>
+
+				<div class="item">
+					<img src="images/icon07.svg" alt="icon-key" class="icon02">
+					<h4>Região valorizada</h4>
+					<p>
+						O Residencial Urban está localizado na zona Sul, região valorizada de Ribeirão Preto.
+					</p>
+				</div>
+			</div>	
+		</div>
+		<!-- end .content-benefits -->
+
+		<div class="content-sliders col-md-12 col-sm-12 col-xs-12">
+			<div class="container">
+				<h3>Ótima localização</h3>
+
+				<ul class="list-location">
+					<li>
+						<img src="images/icon09.svg" alt="">
+						Restaurantes
+					</li>
+					<li>
+						<img src="images/icon10.svg" alt="">
+						Escolas
+					</li>
+					<li>
+						<img src="images/icon11.svg" alt="">
+						Supermercados
+					</li>
+					<li>
+						<img src="images/icon12.svg" alt="">
+						Academias
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end .content-sliders -->
+
+		<div class="content-form col-md-12 col-sm-12 col-xs-12">
+			<div class="container">
+				<div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
+					<h3 class="text-center col-md-12 col-sm-12 col-xs-12">
+						Aproveite condições <br>
+						especiais de negociacão
+					</h3>
+					<p class="text-center col-md-12 col-sm-12 col-xs-12">
+						Envie uma mensagem. Nossos consultores <br>
+						de vendas entrarão em contato com você.
+					</p>
+
+					<form action="" class="col-md-12 col-sm-12 col-xs-12 no-padding form-email" onsubmit="return sendFormAgende();">
+						<label for="" class="col-md-12 col-sm-12 col-xs-12">
+							Nome
+							<input type="text" placeholder="Digite aqui o seu nome" name="name" class="no-padding col-md-12 col-sm-12 col-xs-12">
+						</label>
+						<label for="" class="col-md-12 col-sm-12 col-xs-12">
+							Email
+							<input type="mail" placeholder="Digite aqui o seu email" name="email" class="no-padding col-md-12 col-sm-12 col-xs-12">
+						</label>
+						<label for="" class="col-md-12 col-sm-12 col-xs-12">
+							Telefone
+							<input type="tel" placeholder="(DDD)+ Número" name="tel" class="no-padding col-md-12 col-sm-12 col-xs-12">
+						</label>
+						<label for="" class="col-md-12 col-sm-12 col-xs-12 submit">
+							<input type="submit" value="Enviar">
+						</label>
+						<input type="hidden" name="action" value="saveAgenda">
+					</form>
+
+					<p class="col-md-12 col-sm-12 col-xs-12">Se preferir, ligue para a gente.</p>
+
+					<div class="show-tel col-md-12 col-sm-12 col-xs-12">
+						<span class="tel-hidden">Ver telefone</span>
+						<span class="tel-visible">(11) 5555-5555</span>
+					</div>
+					<p class="img-warning">* Imagens meramente ilustrativas.</p>
+				</div>
+			</div>
+		</div>
+		<!-- end .content-form -->
+
+		<!-- Modal fotos-->
+		<div class="modal fade" id="modal-fotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-content">
+					<div class="modal-body" style="position: relative;">
+						<img src="" alt="" id="img-slider-modal">
+						<img src="images/img-alerta-modal.jpg" alt="expand-image" class="expand-image-alert" id="hidden-gif">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade modal-sucesso" id="modalsucesso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content col-md-12 col-sm-12 col-xs-12">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="content-img">
+							<img src="images/icon-modal-sucesso.svg" alt="">
+						</div>
+
+						<h4 class="modal-title" id="myModalLabel">Ok!</h4>
+					</div>
+					<div class="modal-body col-md-12 col-sm-12 col-xs-12">
+						<p class="text-center">
+							Suas informações foram enviadas <br> com sucesso. Aguarde o contato de <br> nossos representantes.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end modal -->
+
+		<!-- Modal -->
+		<div class="modal fade modal-sucesso" id="modalerro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content col-md-12 col-sm-12 col-xs-12">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<div class="content-img">
+							<img src="images/icon-modal-erro.svg" alt="">
+						</div>
+
+						<h4 class="modal-title" id="myModalLabel">Atenção</h4>
+					</div>
+					<div class="modal-body col-md-12 col-sm-12 col-xs-12">
+						<p class="text-center">
+							Ocorreu um erro durante o processamento
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end .modal -->
+
+		<!-- font core -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
+
+		<!-- css core -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Código do Google para tag de remarketing -->
+		<!--As tags de remarketing não podem ser associadas a informações pessoais de identificação nem inseridas em páginas relacionadas a categorias de confidencialidade. Veja mais informações e instruções sobre como configurar a tag em: http://google.com/ads/remarketingsetup-->
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			var google_conversion_id = 868108439;
+			var google_custom_params = window.google_tag_params;
+			var google_remarketing_only = true;
+			/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+			<div style="display:inline;">
+				<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/868108439/?guid=ON&amp;script=0"/>
+			</div>
+		</noscript>
+
+		<!-- GA -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-83521853-3', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+		<!-- Hotjar Tracking Code for http://upper-ribeirao-perplan.ionicalabs.com.br -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:338853,hjsv:5};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+
+		<!-- js core -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>	
+		<script src="js/jquery.maskedinput.min.js" type="text/javascript" language="javascript"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+	</html>
